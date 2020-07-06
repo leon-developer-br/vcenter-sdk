@@ -1,9 +1,15 @@
-import { VirtualMachineClient } from './clients';
+import { HostClient, VirtualMachineClient, SessionClient } from './clients';
 
 async function init(): Promise<void> {
   try {
-    // SessionClient.create('lpereira@trtrio');
-    VirtualMachineClient.get('vm-13218');
+    /*
+      const key = await SessionClient.create('lpereira@trtrio', '??');
+      console.log(key);
+    */
+    // VirtualMachineClient.get('vm-13218');
+
+    HostClient.list();
+    // HostClient.get('host-93238');
   } catch (error) {
     console.log(error);
   }

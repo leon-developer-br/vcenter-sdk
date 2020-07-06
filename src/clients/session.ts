@@ -1,6 +1,6 @@
 import http from '../http';
 
-const url = '/com/vmware/cis/session ';
+const url = 'rest/com/vmware/cis/session ';
 
 class SessionClient {
   static async create(email: string, password: string): Promise<void> {

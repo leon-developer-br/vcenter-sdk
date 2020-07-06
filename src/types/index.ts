@@ -3,5 +3,5 @@ export interface IHost {
 }
 
 export interface IVirtualMachine {
-  name: string;
+  name?: string;
 }
