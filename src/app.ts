@@ -1,9 +1,9 @@
-import { HostClient, SessionClient } from './clients';
+import { VirtualMachineClient } from './clients';
 
 async function init(): Promise<void> {
   try {
-    // SessionClient.create('lpereira@trtrio', 'braveTECH#99');
-    HostClient.list();
+    // SessionClient.create('lpereira@trtrio');
+    VirtualMachineClient.get('vm-13218');
   } catch (error) {
     console.log(error);
   }

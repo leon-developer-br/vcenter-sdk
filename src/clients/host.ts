@@ -6,8 +6,8 @@ const url = 'vcenter/host';
 class HostClient {
   static async list(): Promise<IHost[]> {
     const { data } = await http.get(url);
-    console.log(data);
-    return data as IHost [];
+    console.log(data.value);
+    return data.value;
   }
 }
 
