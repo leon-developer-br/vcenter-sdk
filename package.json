@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "scripts": {
     "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 ts-node-dev src/app.ts"
